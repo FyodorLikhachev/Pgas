@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Likhachev.Pgas.Core/1.0.0": {
+        "runtime": {
+          "Likhachev.Pgas.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Likhachev.Pgas.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,8 @@
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Core.deps.json
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Core.dll
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Core.pdb
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Core.csprojAssemblyReference.cache
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Core.AssemblyInfoInputs.cache
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Core.AssemblyInfo.cs
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Core.dll
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Core\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Core.pdb

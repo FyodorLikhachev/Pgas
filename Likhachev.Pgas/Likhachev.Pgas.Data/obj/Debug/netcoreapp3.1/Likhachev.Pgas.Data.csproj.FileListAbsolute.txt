@@ -1,0 +1,13 @@
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Data.deps.json
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Data.dll
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Data.AssemblyInfoInputs.cache
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Data.AssemblyInfo.cs
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Data.runtimeconfig.json
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Data.runtimeconfig.dev.json
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Data.csprojAssemblyReference.cache
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Data.pdb
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Data.dll
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Data.pdb
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Core.dll
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\bin\Debug\netcoreapp3.1\Likhachev.Pgas.Core.pdb
+C:\Users\Fyodor Likhachev\source\repos\Likhachev.Pgas\Likhachev.Pgas.Data\obj\Debug\netcoreapp3.1\Likhachev.Pgas.Data.csproj.CopyComplete
