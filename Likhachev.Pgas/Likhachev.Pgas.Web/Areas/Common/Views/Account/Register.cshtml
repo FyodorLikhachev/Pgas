@@ -1,0 +1,59 @@
+﻿@model Likhachev.Pgas.Services.Dtos.RegistrationAccountDto
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Регистрация</h2>
+<div class="col-md-4">
+    <section>
+        <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+            @Html.ValidationSummary()
+            <div>
+                <div>
+                    <label asp-for="UserName">Введите Ваше имя</label><br />
+                    <input type="text" asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" />
+                </div>
+                <div>
+                    <label asp-for="UserSecondName">Введите фамилию</label><br />
+                    <input type="text" asp-for="UserSecondName" class="form-control" />
+                    <span asp-validation-for="UserSecondName" />
+                </div>
+                <div>
+                    <label asp-for="UserMiddleName">Введите отчество</label><br />
+                    <input type="text" asp-for="UserMiddleName" class="form-control" />
+                    <span asp-validation-for="UserMiddleName" />
+                </div>
+                <div>
+                    <label asp-for="Login">Придумайте ваш логин</label><br />
+                    <input type="text" asp-for="Login" class="form-control" />
+                    <span asp-validation-for="Login" />
+                </div>
+                <div>
+                    <label asp-for="Password">Введите пароль</label><br />
+                    <input type="password" asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" />
+                </div>
+                <div>
+                    <label asp-for="ConfirmPassword">Повторите пароль</label><br />
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" />
+                </div>
+                <div>
+                    <label asp-for="AccountType">Ваш роль</label><br />
+                    <select asp-for="AccountType" asp-items="Html.GetEnumSelectList<AccountModelTypes>()" class="form-control"></select>
+                </div>
+                <div>
+                    <label asp-for="Faculty">Ваш факультет</label><br />
+                    <select asp-for="Faculty" asp-items="Html.GetEnumSelectList<Faculties>()" class="form-control"></select>
+                </div><br />
+                <div>
+                    <input type="submit" value="Регистрация" class="btn btn-outline-dark" />
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+

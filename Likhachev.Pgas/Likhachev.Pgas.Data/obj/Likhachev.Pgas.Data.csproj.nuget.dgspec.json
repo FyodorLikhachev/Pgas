@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj": {}
+    "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj": {
+    "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj",
         "projectName": "Likhachev.Pgas.Core",
-        "projectPath": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj",
+        "projectPath": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj",
         "packagesPath": "C:\\Users\\Fyodor Likhachev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Core\\obj\\",
+        "outputPath": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj": {
+    "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj",
         "projectName": "Likhachev.Pgas.Data",
-        "projectPath": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj",
+        "projectPath": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Data\\Likhachev.Pgas.Data.csproj",
         "packagesPath": "C:\\Users\\Fyodor Likhachev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Data\\obj\\",
+        "outputPath": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj": {
-                "projectPath": "C:\\Users\\Fyodor Likhachev\\source\\repos\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj"
+              "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj": {
+                "projectPath": "C:\\Users\\Fyodor Likhachev\\Documents\\GitHub\\Pgas\\Likhachev.Pgas\\Likhachev.Pgas.Core\\Likhachev.Pgas.Core.csproj"
               }
             }
           }

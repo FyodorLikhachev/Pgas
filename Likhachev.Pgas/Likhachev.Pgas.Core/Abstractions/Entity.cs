@@ -6,7 +6,9 @@ namespace Likhachev.Pgas.Core.Abstractions
 {
     public abstract class Entity : IHasId
     {
-        public int Id { get; protected set; }
+        public Entity() { }
+        public void SetId(int id) { Id = id; }
+        public int Id { get; /*protected*/ set; }
 
         public override bool Equals(object anotherObject)
         {

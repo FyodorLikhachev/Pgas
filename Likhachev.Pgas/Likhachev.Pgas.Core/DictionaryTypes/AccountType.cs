@@ -1,11 +1,12 @@
-﻿using Likhachev.Pgas.Core.Abstractions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Likhachev.Pgas.Core.DictionaryTypes
 {
+    using Abstractions;
+    using Accounts;
     public partial class AccountType : Entity
     {
-        public string AccountTypeName { get; set; }
+        public string AccountTypeName { get; protected set; }
         public AccountType()
         {
             Accounts = new HashSet<Account>();

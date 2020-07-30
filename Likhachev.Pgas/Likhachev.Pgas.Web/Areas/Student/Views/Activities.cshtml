@@ -1,0 +1,138 @@
+﻿@model IEnumerable<Likhachev.Pgas.Services.Dtos.CheckedActivityDto>
+@{
+    ViewData["Title"] = "Достижения";
+}
+
+<div id="LoadUserControl" style="overflow-y:auto; overflow-x:hidden; ">
+    <ul class="nav nav-tabs" id="publishment-types" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="flat-tab" data-toggle="tab" href="#flat" role="tab" aria-controls="flat" aria-selected="true">Мои творческие достижения</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="room-tab" data-toggle="tab" href="#room" role="tab" aria-controls="characteristics" aria-selected="false">Мои авторские работы</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="opinion" aria-selected="false">Мои заявки на ПГАС</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Персональная информация</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="product-content">
+        <div class="tab-pane fade show active" id="flat" role="tabpanel" aria-labelledby="flat-tab"></div>
+        <div class="tab-pane fade" id="room" role="tabpanel" aria-labelledby="characteristics-tab"></div>
+        <div class="tab-pane fade" id="buy" role="tabpanel" aria-labelledby="opinion-tab"></div>
+        <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab"></div>
+    </div>
+    <br />
+
+    <div id="achievements-info">
+        @{ await Html.RenderPartialAsync("_AllAchievements");}
+    </div>
+    <div id="author-works-info" hidden="hidden">
+        @{ await Html.RenderPartialAsync("_AllAuthorWorks");}
+    </div>
+    <div id="pgas-claims-info" hidden="hidden">
+        @{ await Html.RenderPartialAsync("_AllPgasClaims");}
+    </div>
+    <div id="personal-info" hidden="hidden">
+        @{ await Html.RenderPartialAsync("_PersonalInfo");}
+    </div>
+    <br />
+    <button id="motive-letter" asp-action="MotiveLetter" asp-controller="Activity" type="submit" class="btn btn-success btn-rounded col-md-3">
+        Мотивационное письмо
+    </button>
+    <button id="btn-submit" asp-action="CreatePgas" asp-controller="Activity" type="button" class="btn btn-success btn-rounded col-md-3">
+        Подать заявку на ПГАС
+    </button>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        $(document).ready ( function () {
+            $(document).on("click", ".btn-primary", function () {
+                console.log($(this).closest('tr').children(":first").html());
+                var id = $(this).closest('tr').children(":first").html();
+                document.location = '@Url.Action("Edit", "Activity")?id=' + id;
+            });
+        });
+
+        $(document).ready(function () {
+            $('#flat-tab').click(function (e) {
+                e.preventDefault();
+                $('#achievements-info').removeAttr("hidden");
+                $('#author-works-info').attr("hidden", "hidden");
+                $('#pgas-claims-info').attr("hidden", "hidden");
+                $('#personal-info').attr("hidden", "hidden");
+            });
+        });
+
+        $(document).ready ( function () {
+            $(document).on ("click", ".btn-danger", function () {
+                $(this).closest('tr').remove();
+            });
+        });
+
+        jQuery(document).ready(function() {
+            jQuery('#flat-tab')[0].click();
+        });
+
+        $(document).ready(function () {
+            $('#room-tab').click(function (e) {
+                $('#author-works-info').removeAttr("hidden");
+                $('#achievements-info').attr("hidden", "hidden");
+                $('#pgas-claims-info').attr("hidden", "hidden");
+                $('#personal-info').attr("hidden", "hidden");
+            });
+        });
+
+        $(document).ready(function () {
+            $('#buy-tab').click(function (e) {
+                e.preventDefault();
+                $('#pgas-claims-info').removeAttr("hidden");
+                $('#personal-info').attr("hidden", "hidden");
+                $('#author-works-info').attr("hidden", "hidden");
+                $('#achievements-info').attr("hidden", "hidden");
+            });
+        });
+
+        $(document).ready(function () {
+            $('#info-tab').click(function (e) {
+                e.preventDefault();
+                $('#personal-info').removeAttr("hidden");
+                $('#author-works-info').attr("hidden", "hidden");
+                $('#achievements-info').attr("hidden", "hidden");
+                $('#pgas-claims-info').attr("hidden", "hidden");
+            });
+        });
+
+        var checked = []
+
+        $(document).ready(function () {
+            $('#motive-letter').on('click', function () {
+                var ids = []
+                var checked = $(".form-check-input").filter(":checked");
+                checked.each(function () {
+                    ids.push($(this).closest("tr").children(":first").html());
+                });
+
+                console.log(ids);
+
+                $.ajax({
+                    url: '@Url.Action("MotiveLetter", "Activity")',
+                    dataType: "json",
+                    data: { identificators : ids},
+                    type: "POST",
+                    success: function (data) {
+                        $('#LoadUserControl').empty();
+                        $('#LoadUserControl').html(data);
+                        restrictSpecialWord();
+                    },
+                    traditional: true
+                });
+            })
+        });
+    </script>
+}

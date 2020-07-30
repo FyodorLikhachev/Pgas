@@ -5,11 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Likhachev.Pgas.Web.Models;
-using Likhachev.Pgas.Services;
 
 namespace Likhachev.Pgas.Web.Controllers
 {
+    using Models;
+    using Services;
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -21,7 +21,8 @@ namespace Likhachev.Pgas.Web.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Value = ActivityServices.GetName(7);
+            ViewBag.Value = ActivityServices.GetActivity(7).ActivityName;
+            //ActivityServices.RemoveActivity(22);
             return View();
         }
 

@@ -1,0 +1,29 @@
+﻿@model ActivityDto
+@{
+    ViewData["Title"] = "Редактирование";
+}
+
+@using Likhachev.Pgas.Services.Dtos
+
+<h1>Редактирование</h1>
+<br />
+<form asp-action="Edit" asp-controller="Activity">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "")
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.ActivityType)
+    <div class="col-md-5">
+        <p>Достижение: @Html.EditorFor(model => model.ActivityName)</p>
+    </div>
+    <div class="col-md-3">
+        <p>Дата: @Html.EditorFor(model => model.Date)</p>
+    </div>
+    <div class="col-md-3">
+        <p>Подтверждающий файл: @Html.EditorFor(model => model.PinnedFile)</p>
+    </div>
+    <div>
+        <div>
+            <input type="submit" value="Сохранить" class="btn btn-success btn-rounded col-md-3" />
+        </div>
+    </div>
+</form>

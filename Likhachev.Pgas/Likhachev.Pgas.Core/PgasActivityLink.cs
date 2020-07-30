@@ -1,7 +1,8 @@
-﻿using Likhachev.Pgas.Core.Abstractions;
-
-namespace Likhachev.Pgas.Core
+﻿namespace Likhachev.Pgas.Core
 {
+    using Abstractions;
+    using Activities;
+    using PgasClaims;
     public partial class PgasActivityLink : Entity
     {
         public int PgasClaimId { get; set; }

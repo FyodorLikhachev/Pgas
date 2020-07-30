@@ -1,8 +1,9 @@
-﻿using Likhachev.Pgas.Core.Abstractions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Likhachev.Pgas.Core.DictionaryTypes
 {
+    using Abstractions;
+    using Accounts;
     public partial class Faculty : Entity
     {
         public string FacultyName { get; set; }

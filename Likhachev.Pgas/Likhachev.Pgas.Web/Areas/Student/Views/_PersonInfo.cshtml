@@ -1,0 +1,28 @@
+﻿@model Likhachev.Pgas.Services.Dtos.RegistrationAccountDto
+@{
+    Layout = "";
+}
+
+<h2>Регистрация</h2>
+<div class="col-md-4">
+    <section>
+        <div>
+            <p>Ваше имя: @Model.UserName </p>
+        </div>
+        <div>
+            <p>Ваша фамилия: @Model.UserSecondName </p>
+        </div>
+        <div>
+            <p>Ваше отчество: @Model.UserMiddleName </p>
+        </div>
+        <div>
+            <p>Ваш логин: @Model.Login </p>
+        </div>
+        <div>
+            <p>Ваш факультет: @Model.FacultyName </p>
+        </div>
+        <div>
+            <p>Ваша учебная группа: @Model.StudyGroup </p>
+        </div>
+    </section>
+</div>

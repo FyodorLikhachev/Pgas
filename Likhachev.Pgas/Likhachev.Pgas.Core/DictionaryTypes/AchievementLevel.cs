@@ -1,8 +1,9 @@
-﻿using Likhachev.Pgas.Core.Abstractions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Likhachev.Pgas.Core.DictionaryTypes
 {
+    using Activities;
+    using Abstractions;
     public partial class AchievementLevel : Entity
     {
         public string AchieveLvlName { get; set; }
